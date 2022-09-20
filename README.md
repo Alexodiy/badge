@@ -14,7 +14,7 @@
 
 
 #### 🔗 Ссылка на ДЕМО:
-[![portfolio](https://img.shields.io/badge/Перейти_для_просмотра-03a9f4?style=for-the-badge&logo=Imgur&logoColor=white)](https://alexodiy.github.io/badge/?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK)
+[![portfolio](https://img.shields.io/badge/Перейти_для_просмотра-2c475c?style=for-the-badge&logo=Imgur&logoColor=white)](https://alexodiy.github.io/badge/?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK&anim=blik)
 
 | Параметр | Тип     | Описание                |
 | :-------- | :------- | :------------------------- |
@@ -23,7 +23,8 @@
 | `level` | `string` | **Уровень игрока**.  |
 | `raids` | `string` | **Кол-во рейдов**. |
 | `death` | `string` | **Кол-во смертей**. Чем больше, тем он злей...  |
-| `pmc` | `string` | **Фракция**. Если указано "USEK", то логотип фракции изменится |
+| `pmc` | `string` | **Фракция**. Если указано `USEK`, то логотип фракции изменится |
+| `anim` | `string` | **Анимация**. Если указано `blik`, то будет анимация. Добавлена временно |
 
 
 
