@@ -1,0 +1,190 @@
+/*
+* Стили контейнера, сброс стандартов и прочей хераборы
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #566d78;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.air-container {
+  max-width: 1280px;
+  margin: 30px auto;
+  padding: 40px;
+  font-weight: bold;
+}
+
+/*
+* Стили только жетона ЧВК
+*/
+
+.badge {
+  position: relative;
+  transition: 0.3s all;
+  transform-style: preserve-3d;
+  animation: tilt 8s ease-in-out 0s infinite alternate;
+
+  &__cont {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 65px 50px;
+    display: grid;
+    grid-template-columns: 25% 72%;
+    gap: 35px;
+  }
+
+  &__cont-bear {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__cont-right-head {
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    z-index: 9;
+    transition: all 1s;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__cont-img-bear {
+    margin: auto;
+  }
+
+  &__cont-right-head-uppercase, &__cont-right-head-slash, &__cont-right-head-normal, &__cont-right-head-tir {
+    width: auto;
+    min-width: 0;
+    max-height: 75px;
+  }
+
+  &__cont-right-head-j {
+    position: relative;
+    bottom: -1.7rem;
+  }
+
+  &__cont-right-head-Q, &__cont-right-head-q, &__cont-right-head-g, &__cont-right-head-y {
+    position: relative;
+    bottom: -0.99rem;
+  }
+
+  &__cont-right-head-tir {
+    position: relative;
+    bottom: 0.75rem;
+  }
+
+  &__cont-right-body-item-lvl {
+    display: flex;
+    align-content: baseline;
+  }
+
+  &__cont-right-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin: 35px 0 0 0;
+  }
+
+  &__cont-right-body-item-icon {
+    width: 85px;
+  }
+
+  &__cont-right-body-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  &__cont-right-body-item-lvl-icon {
+    width: auto;
+    max-height: 70px;
+  }
+
+  &__cont-right-body-item-stat {
+    display: flex;
+    align-content: baseline;
+    padding: 0 0 0 30px;
+
+    img{
+      width: auto;
+      max-height: 70px;
+    }
+
+  }
+
+}

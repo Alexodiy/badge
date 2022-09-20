@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Жетоны ЧВК</title>
+    <link rel="stylesheet" href="assets/css/badge.min.css">
+</head>
+
+<body>
+
+<div class="air-container">
+    <!--
+        <h1>Жетон ЧВК</h1>
+
+        <hr>
+    -->
+        <div class="badge">
+
+            <!--<img class="test" src="assets/img/sym/br.png" alt="">-->
+
+        <div class="badge__bg">
+            <img class="badge__bg-img" src="assets/img/badge-bg.png" alt="">
+        </div>
+
+        <div class="badge__cont">
+
+            <div class="badge__cont-left">
+                <div id="pmc" class="badge__cont-bear">
+                    <img class="badge__cont-img-bear" src="assets/img/BEAR.png" alt="">
+                </div>
+            </div>
+
+            <div class="badge__cont-right">
+                <div id="nickname" class="badge__cont-right-head">
+                    ROSLER
+                </div>
+                <div class="badge__cont-right-body">
+                    <div class="badge__cont-right-body-item">
+                        <div class="badge__cont-right-body-item-lvl">
+                            <img class="badge__cont-right-body-item-lvl-icon" src="assets/img/sym/Lb.png" alt="">
+                            <img class="badge__cont-right-body-item-lvl-icon" src="assets/img/sym/Vb.png" alt="">
+                            <img class="badge__cont-right-body-item-lvl-icon" src="assets/img/sym/Lb.png" alt="">
+                        </div>
+                        <div id="level" class="badge__cont-right-body-item-stat">999</div>
+                    </div>
+                    <div class="badge__cont-right-body-item">
+                        <div>
+                            <img class="badge__cont-right-body-item-icon" src="assets/img/Time.png" alt="">
+                        </div>
+                        <div id="hours" class="badge__cont-right-body-item-stat">999</div>
+                    </div>
+                    <div class="badge__cont-right-body-item">
+                        <div>
+                            <img class="badge__cont-right-body-item-icon" src="assets/img/Raid.png" alt="">
+                        </div>
+                        <div id="raids" class="badge__cont-right-body-item-stat">999</div>
+                    </div>
+                    <div class="badge__cont-right-body-item">
+                        <div>
+                            <img class="badge__cont-right-body-item-icon" src="assets/img/Death.png" alt="">
+                        </div>
+                        <div id="death" class="badge__cont-right-body-item-stat">999</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/badge.min.js"></script>
+<script>
+    showMessage(nickname, 'nickname');
+    showMessage(hours, 'hours');
+    showMessage(level, 'level');
+    showMessage(raids, 'raids');
+    showMessage(death, 'death');
+    showPMC(pmc, 'pmc');
+</script>
+</body>
+</html>
