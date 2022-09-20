@@ -14,16 +14,22 @@ function showMessage(text, selector) {
     let x = '';
     for (let i = 0; i < arrayLength; i++) {
         let symbol = arr[i];
+
+        let mega = '';
+        if(arrayLength >= 10){
+            mega = ' badge__more-than-ten';
+        }
+
         let isUpperCase = symbol.toUpperCase()==symbol; // true - верхний регистр, false - нижний
         if(arr[i] === '_' || arr[i] === ' '){
-            x += '<img class="badge__cont-right-head-slash" src="assets/img/sym/slash.png" alt="">';
+            x += '<img class="badge__cont-right-head-slash'+mega+'" src="assets/img/sym/slash.png" alt="">';
         }else if(arr[i] === '-'){
-            x += '<img class="badge__cont-right-head-tir" src="assets/img/sym/tir.png" alt="">';
+            x += '<img class="badge__cont-right-head-tir'+mega+'" src="assets/img/sym/tir.png" alt="">';
         }
         else if (!!isUpperCase){
-            x += '<img class="badge__cont-right-head-uppercase badge__cont-right-head-'+arr[i]+'" src="assets/img/sym/' + arr[i] + 'b.png" alt="">';
+            x += '<img class="badge__cont-right-head-uppercase badge__cont-right-head-'+arr[i]+mega+'" src="assets/img/sym/' + arr[i] + 'b.png" alt="">';
         }else{
-            x += '<img class="badge__cont-right-head-normal badge__cont-right-head-'+arr[i]+'" src="assets/img/sym/' + arr[i] + '.png" alt="">';
+            x += '<img class="badge__cont-right-head-normal badge__cont-right-head-'+arr[i]+mega+'" src="assets/img/sym/' + arr[i] + '.png" alt="">';
         }
         // console.log(arr[i]);
     }
