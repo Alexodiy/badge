@@ -9,12 +9,12 @@
 #### Ссылка для генерации, просто добавлем в конец URL:
 
 ```http
-  ?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK
+  ?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK&anim=blik
 ```
 
 
 #### 🔗 Ссылка на ДЕМО:
-[![portfolio](https://img.shields.io/badge/Перейти_для_просмотра-238636?style=for-the-badge&logo=Imgur&logoColor=white)](https://alexodiy.github.io/badge/?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK&anim=blik&anim=blik)
+[![portfolio](https://img.shields.io/badge/Перейти_для_просмотра-238636?style=for-the-badge&logo=Imgur&logoColor=white)](https://dan-zakirov.github.io/badge/?nick=MARSHRUTKA&hours=8000&level=45&raids=900&death=350&pmc=USEK&anim=blik)
 
 | Параметр | Тип     | Описание                |
 | :-------- | :------- | :------------------------- |
